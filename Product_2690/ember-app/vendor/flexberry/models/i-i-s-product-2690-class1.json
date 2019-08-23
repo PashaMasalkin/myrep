@@ -1,0 +1,131 @@
+﻿{
+  "name": "IISProduct_2690Class1",
+  "modelName": "i-i-s-product-2690-class1",
+  "className": "Class1",
+  "nameSpace": "IIS.Product_2690",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "per11",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "per12",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "class2",
+      "relatedTo": "i-i-s-product-2690-class2",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "Class1E",
+      "modelName": "i-i-s-product-2690-class1",
+      "attrs": [
+        {
+          "name": "per11",
+          "caption": "Пер11",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "per12",
+          "caption": "Пер12",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Class2",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "per21",
+              "caption": "Пер21",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "per22",
+              "caption": "Пер22",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 2,
+          "type": "default",
+          "caption": "Класс2",
+          "name": "class2",
+          "relatedTo": "i-i-s-product-2690-class2",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "Class1L",
+      "modelName": "i-i-s-product-2690-class1",
+      "attrs": [
+        {
+          "name": "per11",
+          "caption": "Per11",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "per12",
+          "caption": "Per12",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Class2",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "per21",
+              "caption": "Per21",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "default",
+          "caption": "",
+          "name": "class2",
+          "relatedTo": "i-i-s-product-2690-class2",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

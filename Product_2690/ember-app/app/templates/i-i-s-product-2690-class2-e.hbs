@@ -1,0 +1,45 @@
+<h3 class="ui header">{{t "forms.i-i-s-product-2690-class2-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.per21
+      class=(if (v-get validationObject "per21" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-2690-class2-e.per21-caption")
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "per21" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.per22
+      class=(if (v-get validationObject "per22" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-2690-class2-e.per22-caption")
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "per22" "messages")}}
+  </div>
+</form>

@@ -1,0 +1,73 @@
+﻿{
+  "name": "IISProduct_2690Class2",
+  "modelName": "i-i-s-product-2690-class2",
+  "className": "Class2",
+  "nameSpace": "IIS.Product_2690",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "per21",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "per22",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "Class2E",
+      "modelName": "i-i-s-product-2690-class2",
+      "attrs": [
+        {
+          "name": "per21",
+          "caption": "Per21",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "per22",
+          "caption": "Per22",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "Class2L",
+      "modelName": "i-i-s-product-2690-class2",
+      "attrs": [
+        {
+          "name": "per21",
+          "caption": "Per21",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "per22",
+          "caption": "Per22",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

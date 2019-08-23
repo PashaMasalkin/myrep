@@ -1,0 +1,78 @@
+<h3 class="ui header">{{t "forms.i-i-s-product-2690-class1-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.per11
+      class=(if (v-get validationObject "per11" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-2690-class1-e.per11-caption")
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "per11" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.per12
+      class=(if (v-get validationObject "per12" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-2690-class1-e.per12-caption")
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "per12" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-product-2690-class1-e.class2-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.class2
+      relationName="class2"
+      projection="Class2L"
+      title=(t "forms.i-i-s-product-2690-class1-e.class2-caption")
+      readonly=readonly
+      componentName="class2Lookup"
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "class2" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.class2.per21
+      class=(if (v-get validationObject "class2.per21" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-2690-class1-e.class2.per21-caption")
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "class2.per21" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.class2.per22
+      class=(if (v-get validationObject "class2.per22" "isInvalid") "error")
+      label=(t "forms.i-i-s-product-2690-class1-e.class2.per22-caption")
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "class2.per22" "messages")}}
+  </div>
+</form>

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29BADD40-957F-4892-8D47-72E6EACAC430}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IIS.Product_2690</RootNamespace>
+    <AssemblyName>Product_2690.Objects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Product_2690.Objects.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Product_2690.Objects.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary, Version=4.3.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpressionBuilder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1930de881a0ac85a, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\ExpressionBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary, Version=4.3.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HttpCompress, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\HttpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.Audit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8b09038b5bd09732, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Audit.3.1.0\lib\net45\ICSSoft.STORMNET.Business.Audit.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Web.AjaxControls, Version=1.0.5000.30000, Culture=neutral, PublicKeyToken=a64189ff7ea377f5, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\ICSSoft.STORMNET.Web.AjaxControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Web.Tools, Version=1.0.0.1, Culture=neutral, PublicKeyToken=dd3c9e296c34a5da, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\ICSSoft.STORMNET.Web.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Caseberry.Logging.BusinessServers, Version=1.0.0.1, Culture=neutral, PublicKeyToken=2064285e6f5eb4a5, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.LogService.Objects.3.0.0\lib\net45\IIS.Caseberry.Logging.BusinessServers.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Caseberry.Logging.Objects, Version=1.0.0.1, Culture=neutral, PublicKeyToken=e89274d6fcfab3e9, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.LogService.Objects.3.0.0\lib\net45\IIS.Caseberry.Logging.Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.ExpressionSerialization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c7cc9cf04764d4a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\IIS.ExpressionSerialization.dll</HintPath>
+    </Reference>
+    <Reference Include="IIS.Flex.CaseberryInteraction, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79f8b86980a5eb81, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\IIS.Flex.CaseberryInteraction.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Caching, Version=1.0.0.0, Culture=neutral, PublicKeyToken=43b437d0302b56ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Caching.1.0.0\lib\net45\NewPlatform.Flexberry.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b04c483e14c0d306, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Security.2.1.0\lib\net45\NewPlatform.Flexberry.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Security.BusinessServers, Version=1.0.0.1, Culture=neutral, PublicKeyToken=2a87ddf394e1b26a, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Security.2.1.0\lib\net45\NewPlatform.Flexberry.Security.BusinessServers.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Security.Objects, Version=1.0.0.1, Culture=neutral, PublicKeyToken=e9e142aba0117561, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.Security.2.1.0\lib\net45\NewPlatform.Flexberry.Security.Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Web.Http, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4e8dffecbbfff4da, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\NewPlatform.Flexberry.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="NewPlatform.Flexberry.Web.LimitEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0d7909547339041e, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\NewPlatform.Flexberry.Web.LimitEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficeWebUI, Version=2.4.4086.15482, Culture=neutral, PublicKeyToken=96f38090f0f5b324, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.AspNet.3.2.0-alpha04\lib\net45\OfficeWebUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-client\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="LogService">
+      <HintPath>..\packages\NewPlatform.Flexberry.LogService.1.1.0\lib\net45\LogService.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\packages\Npgsql.3.0.8\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq">
+      <HintPath>..\packages\Remotion.Linq.1.15.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.022\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\packages\Unity.Abstractions.3.3.0\lib\net45\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration">
+      <HintPath>..\packages\Unity.Configuration.5.2.2\lib\net45\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container">
+      <HintPath>..\packages\Unity.Container.5.8.6\lib\net45\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial">
+      <HintPath>..\packages\Microsoft.Spatial.6.15.0\lib\portable-net45+win+wpa81\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="ChangesToSqlBTMonitor">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ChangesToSqlBTMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="ExternalLangDef">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ExternalLangDef.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.Services.CurrentUserService">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.Services.CurrentUserService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.Services.UnityFactory">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.Services.UnityFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.DRDataService">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Business.DRDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.LINQProvider">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Business.LINQProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.LockService">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Business.LockService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.MSSQLDataService">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Business.MSSQLDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.ODBCDataService">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Business.ODBCDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.OracleDataService">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Business.OracleDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.PostgresDataService">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Business.PostgresDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Collections">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.DataObject">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.DataObject.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.FunctionalLanguage">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.FunctionalLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Tools">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.UserDataTypes">
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.5.0.0\lib\net45\ICSSoft.STORMNET.UserDataTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="UserSettingsService, Version=1.1.0.0, Culture=neutral, PublicKeyToken=2169f05da5d7fddc, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewPlatform.Flexberry.UserSettingsService.3.0.0\lib\net45\UserSettingsService.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="shared\jstreeThemes\apple\bg.jpg" />
+    <Content Include="shared\jstreeThemes\apple\d.png" />
+    <Content Include="shared\jstreeThemes\apple\dot_for_ie.gif" />
+    <Content Include="shared\jstreeThemes\apple\style.css" />
+    <Content Include="shared\jstreeThemes\apple\throbber.gif" />
+    <Content Include="shared\jstreeThemes\classic\d.gif" />
+    <Content Include="shared\jstreeThemes\classic\d.png" />
+    <Content Include="shared\jstreeThemes\classic\dot_for_ie.gif" />
+    <Content Include="shared\jstreeThemes\classic\style.css" />
+    <Content Include="shared\jstreeThemes\classic\throbber.gif" />
+    <Content Include="shared\jstreeThemes\default-rtl\d.gif" />
+    <Content Include="shared\jstreeThemes\default-rtl\d.png" />
+    <Content Include="shared\jstreeThemes\default-rtl\dots.gif" />
+    <Content Include="shared\jstreeThemes\default-rtl\style.css" />
+    <Content Include="shared\jstreeThemes\default-rtl\throbber.gif" />
+    <Content Include="shared\jstreeThemes\default\d.gif" />
+    <Content Include="shared\jstreeThemes\default\d.png" />
+    <Content Include="shared\jstreeThemes\default\style.css" />
+    <Content Include="shared\jstreeThemes\default\t.png" />
+    <Content Include="shared\jstreeThemes\default\throbber.gif" />
+    <Content Include="shared\script\exceptionpanel.js" />
+    <Content Include="shared\script\jquery-1.7.2.min.js" />
+    <Content Include="shared\script\jquery-ui.min.js" />
+    <Content Include="shared\script\jquery.alerts.js" />
+    <Content Include="shared\script\jquery.color.js" />
+    <Content Include="shared\script\jquery.contextMenu.js" />
+    <Content Include="shared\script\jquery.cookie.js" />
+    <Content Include="shared\script\jquery.countdown.pack.js" />
+    <Content Include="shared\script\jquery.dimensions.js" />
+    <Content Include="shared\script\jquery.disable.text.select.js" />
+    <Content Include="shared\script\jquery.ics.js" />
+    <Content Include="shared\script\jquery.maskedinput-1.2.2.js" />
+    <Content Include="shared\script\jquery.maxlength.min.js" />
+    <Content Include="shared\script\jquery.sticky.js" />
+    <Content Include="shared\script\jquery.tooltip.js" />
+    <Content Include="shared\script\master.page.js" />
+    <Content Include="shared\script\tag-it.min.js" />
+    <Content Include="shared\script\thickbox.js" />
+    <Content Include="shared\script\tooltips.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

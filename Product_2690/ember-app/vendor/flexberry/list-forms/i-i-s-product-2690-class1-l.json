@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-product-2690-class1-e",
+  "editForm": "i-i-s-product-2690-class1-e",
+  "external": false,
+  "caption": "Class1",
+  "name": "IISProduct_2690Class1L",
+  "className": "Class1L",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-2690-class1",
+      "modelProjection": "Class1L"
+    }
+  ]
+}

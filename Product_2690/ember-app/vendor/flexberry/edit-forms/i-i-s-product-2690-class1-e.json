@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Class2",
+      "projection": "Class2L",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Class1",
+  "name": "IISProduct_2690Class1E",
+  "className": "Class1E",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-2690-class1",
+      "modelProjection": "Class1E"
+    }
+  ]
+}
